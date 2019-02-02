@@ -9,16 +9,16 @@ import org.springframework.stereotype.Component;
 public class PersistentBugger {
 
 
-    public int persistence(long n) {
+    int persistence(long n) {
 
-       int count=0;
-       int y = 1;
-       String p = Long.toString(n);
-       for(;;) {
-           if (Integer.parseInt(p) / 10 == 0)
-               break;
-           for(int x=0;x<p.length();++x) {
-               y=y*Character.getNumericValue(p.charAt(x));
+        int count=0;
+        int y = 1;
+        String p = Long.toString(n);
+        for(;;) {
+            if (Integer.parseInt(p) / 10 == 0)
+                break;
+            for(int x=0;x<p.length();++x) {
+                y=y*Character.getNumericValue(p.charAt(x));
             }
             ++count;
             p=Integer.toString(y);

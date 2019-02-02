@@ -13,11 +13,8 @@ The input string will only consist of lower case letters and/or spaces.
 @Component
 public class VowelCount {
 
-    public static int getCount(String str) {
-        int vowelsCount = 0;
-
-       return str.replaceAll("[^aeiou]","").length();
-
+    int getCount(String str) {
+        return str.replaceAll("[^aeiou]","").length();
     }
 
 }

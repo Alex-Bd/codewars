@@ -19,18 +19,14 @@ public class AlphabeticAnagramsTest {
     @Test
     public void testKnownInputs() {
 
-   // assertEquals("Position for 'A' incorrect", BigInteger.ONE, anagram.listPosition("A"));
-   //  assertEquals("Position for 'A' incorrect", BigInteger.ONE, anagram.listPosition("ABCDEFG"));
-
-     // assertEquals("Position for 'ABAB' incorrect", BigInteger.valueOf(2), anagram.listPosition("ABAB"));
-
-   // assertEquals("Position for 'AAAB' incorrect", BigInteger.ONE, anagram.listPosition("AAAB"));
-    //  assertEquals("Position for 'BAAA' incorrect", BigInteger.valueOf(4), anagram.listPosition("BAAA"));
-
-     //   assertEquals("Position for 'QUESTION' incorrect", BigInteger.valueOf(24572), anagram.listPosition("QUESTION"));
-
-        assertEquals("Position for 'BOOKKEEPER' incorrect", BigInteger.valueOf(10743), anagram.listPosition("BOOKKEEPER"));
-    //assertEquals("Position for 'ZRMYGBYEUMMLKFRDZZSCVIFGS' incorrect", BigInteger.("12870590285149953329269"), anagram.listPosition("ZRMYGBYEUMMLKFRDZZSCVIFGS"));
+      assertEquals("Position for 'A' incorrect", BigInteger.ONE, anagram.listPosition("A"));
+      assertEquals("Position for 'A' incorrect", BigInteger.ONE, anagram.listPosition("ABCDEFG"));
+      assertEquals("Position for 'ABAB' incorrect", BigInteger.valueOf(2), anagram.listPosition("ABAB"));
+      assertEquals("Position for 'AAAB' incorrect", BigInteger.ONE, anagram.listPosition("AAAB"));
+      assertEquals("Position for 'BAAA' incorrect", BigInteger.valueOf(4), anagram.listPosition("BAAA"));
+      assertEquals("Position for 'QUESTION' incorrect", BigInteger.valueOf(24572), anagram.listPosition("QUESTION"));
+      assertEquals("Position for 'BOOKKEEPER' incorrect", BigInteger.valueOf(10743), anagram.listPosition("BOOKKEEPER"));
+      assertEquals("Position for 'ZRMYGBYEUMMLKFRDZZSCVIFGS' incorrect", new BigInteger("12870590285149953329269"), anagram.listPosition("ZRMYGBYEUMMLKFRDZZSCVIFGS"));
 
     }
 }
